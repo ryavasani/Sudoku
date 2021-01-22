@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sudoku</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='Play.js'></script>
+</head>
+<body>
+    <button class="tablink" onclick="openPage('play-sudoku')">Play Sudoku</button>
+    <button class="tablink" onclick="openPage('solve-sudoku')" id="defaultOpen">Sudoku Solver</button>
+
+    <div id="play-sudoku" class="tabcontent">
+        <h1>Play Sudoku</h1>
+        <div id="game-setup">
+            <div id="difficulty">
+                <h2>Choose Difficulty: </h2>
+                <label><input id="difficulty-1" type="radio" name="difficulty" value="easy" checked>Easy</label>
+                <label><input id="difficulty-2" type="radio" name="difficulty" value="medium">Medium</label>
+                <label><input id="difficulty-3" type="radio" name="difficulty" value="hard">Hard</label>
+            </div>
+            <div id="time">
+                <h2>Choose Time:</h2>
+                <label><input id="time-1" type="radio" name="time" value="3" checked>3 min</label>
+                <label><input id="time-2" type="radio" name="time" value="5">5 min</label>
+                <label><input id="time-3" type="radio" name="time" value="10">10 min</label>
+            </div>
+            <div id="theme">
+                <h2>Choose Theme:</h2>
+                <label><input id="theme-1" type="radio" name="theme" value="light" checked>Light</label>
+                <label><input id="theme-2" type="radio" name="theme" value="dark">Dark</label>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button id="start-btn">Create New Game</button>
+        </div>
+        <div id="stats">
+            <p id="timer"></p>
+            <p id="game-status"></p>
+        </div>
+    
+    
+        <div id="game">
+            <div id="play-board"></div>
+            <div id="number-container" class="hidden">
+                <p id="1">1</p>
+                <p id="2">2</p>
+                <p id="3">3</p>
+                <p id="4">4</p>
+                <p id="5">5</p>
+                <p id="6">6</p>
+                <p id="7">7</p>
+                <p id="8">8</p>
+                <p id="9">9</p>
+            </div>
+        </div>    
+    </div>
+
+    <div id="solve-sudoku" class="tabcontent">
+        <h1>Sudoku Solver</h1>
+        <h3>Input values and this solver will complete the sudoku</h3>
+        <div class="btn-div">
+            <button id="solve-btn">Solve</button>
+        </div>
+
+        <div id="game">
+            <div id="solve-board"></div>
+            <div id="number-container">
+                <p id="1">1</p>
+                <p id="2">2</p>
+                <p id="3">3</p>
+                <p id="4">4</p>
+                <p id="5">5</p>
+                <p id="6">6</p>
+                <p id="7">7</p>
+                <p id="8">8</p>
+                <p id="9">9</p>
+            </div>
+        </div>
+        <div class="bottom-options">
+            <button class="arrow back" id="go-back"></button>
+            <p id="sol-counter">n/a</p>
+            <button class="arrow front" id="go-front"></button>
+        </div>
+    </div>
+
+</body>
+</html>
