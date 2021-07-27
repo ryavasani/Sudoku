@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Sudoku</title>
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='Play.js'></script>
+</head>
+<body>
+
+    <div id="solve-sudoku">
+        <h1>Sudoku Solver</h1>
+        <h3>Input values and this solver will complete the sudoku</h3>
+        <div class="btn-div">
+            <button class="btn" id="delete-btn">Delete Tile</button>
+            <button class="btn" id="clear-btn">Clear Board</button>
+            <button class="btn" id="solve-btn">Solve</button>
+        </div>
+
+        <div id="game">
+            <div id="solve-board"></div>
+            <div id="number-container">
+                <p id="1">1</p>
+                <p id="2">2</p>
+                <p id="3">3</p>
+                <p id="4">4</p>
+                <p id="5">5</p>
+                <p id="6">6</p>
+                <p id="7">7</p>
+                <p id="8">8</p>
+                <p id="9">9</p>
+            </div>
+        </div>
+
+        <div class="bottom-options">
+            <div id="go-back"><i class="fas fa-arrow-left fa-2x"></i></div>
+            <p id="sol-counter">n/a</p>
+            <div id="go-front"><i class="fas fa-arrow-right fa-2x"></i></div>
+        </div>
+    </div>
+
+    <footer >
+        <p class="footer-text">Made by <strong>RY</strong></p>
+    </footer>
+
+</body>
+</html>
